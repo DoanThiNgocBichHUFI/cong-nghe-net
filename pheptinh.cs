@@ -25,6 +25,15 @@ namespace pheptinh
             else
                 this.errorProvider1.Clear();
         }
+         private void txt_b_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Kiểm tra xem ký tự được nhập vào có phải là số hay không
+            if (!Char.IsDigit(e.KeyChar) && !Char.IsControl(e.KeyChar))
+            {
+                // Nếu không phải là số, hủy sự kiện nhập ký tự
+                e.Handled = true;
+            }
+        }
 
         private void btn_cong_Click(object sender, EventArgs e)
         {
