@@ -1,0 +1,30 @@
+ 
+Yêu cầu: Tạo một project giúp cho rạp chiếu phim quản lý việc bán vé của mình. Rạp
+có 3 hàng ghế, mỗi hàng có 5 ghế, các ghế được đánh số từ 1 đến 15 và được phân
+thành 3 lỗ như (hình trên). Giả vé theo lô như sau:
+Giá vé lô A 1000/vé
+Giá vé lô B 1500/vé
+Giá vé lộ C 2000/vé
+Form giao diện trình bày là sơ đồ các chỗ ngồi tương ứng trong rạp phim để người sử
+dụng chọn vị trí muốn mua. Trên sơ đồ này cũng thể hiện vị trí vé đã bán và những vị  
+trí vé chưa bán bằng các thể hiện màu khác nhau (vé chưa bán màu trắng, vé đã bán
+màu vàng, vé đang chọn màu xanh). Khi người sử dụng click chuột tại một vị trí trên
+sơ đồ thì:
+-
+Nếu đây là vị trí chưa bán thì đổi màu của vị trí này sang màu xanh để cho biết
+đây là vị trí đang chọn.
+Nếu đây là vị trí đang chọn (có màu xanh) thì đổi màu của vị trí này trở về
+màu trắng.
+Nếu đây là một vị trí đã bán vé thì xuất hiện một MessageBox thông báo cho
+người sử dụng biết.
+Sau khi đã chọn các vị trí, người sử sụng có thể click chuột vào button CHỌN để
+thanh toán hoặc HỦY BỎ:
+Nếu click vào button CHỌN thì:
+Đổi màu các vị trí đang chọn (màu xanh) trên sơ đồ sang màu vàng (đây là vị
+trí đã bán).
+Xuất tổng số tiền phải trả cho số vé đã mua lên label Thành Tiền.
+Nếu click vào button HỦY BỎ thì:
+-
+-
+Đổi màu các vị trí đang chọn (màu xanh) trên sơ đồ sang màu trắng.
+Xuất lên label Thành Tiền giá trị 0.
